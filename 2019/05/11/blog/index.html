@@ -20,7 +20,7 @@
 <meta name="verify" content="all">
     <!--Title-->
 
-<title>Archives: 2019/5 | hi!jf&#39;s blog!</title>
+<title>first blog! | hi!jf&#39;s blog!</title>
 
 <link rel="alternate" href="/atom.xml" title="hi!jf&#39;s blog!" type="application/atom+xml">
 
@@ -29,9 +29,10 @@
 
     
 <link rel="stylesheet" href="/css/base.css">
-<link rel="stylesheet" href="/css/pages/archive.css">
+<link rel="stylesheet" href="/css/pages/post.css">
 <link rel="stylesheet" href="//cdn.bootcss.com/font-awesome/4.7.0/css/font-awesome.min.css">
 <link rel="stylesheet" href="/css/thirdParty/highlight/github.css">
+<link rel="stylesheet" href="/css/pages/comments.css">
 
     <!--script-->
 
@@ -53,6 +54,23 @@
 
 <!--<script src="https://imsun.github.io/gitment/dist/gitment.browser.js"></script>-->
 
+
+<script src="/js/thirdParty/gitment.browser.min.js"></script>
+<script>
+  var labels = "blog,gitment";
+  labels = labels.split(",");
+  var gitment = new Gitment({
+    id: window.location.pathname,
+    owner: "WindGaing",
+    repo: "WindGiang.github.io",
+    oauth: {
+      client_id: "3f816c4c97589fff7e01",
+      client_secret: "2bb440f12c06a85e07590ba3dfb11f09f8cec0ab"
+    },
+    perPage: "20",
+    labels: labels
+  });
+</script>
 
     
     
@@ -152,15 +170,16 @@
 </ul>
 
 
-        
-<div id="main">
-  <div id="post-list">
-    <ul class="archives-post-list">
-        
-      <li class="post-items" _href="/2019/05/11/blog/">
-        <p class="info">2019</p>
-        <h2 class="post-item-title">first blog!</h2>
-          <div class="article-meta">
+        <div id="main">
+    <article id="post">
+        <div id="post-header">
+
+            <h1 id="first blog!">
+                
+                first blog!
+                
+            </h1>
+            <div class="article-meta">
     
     
     <span class="categories-meta fa-wrap">
@@ -181,7 +200,7 @@
     
     <span class="fa-wrap">
         <i class="fa fa-clock-o"></i>
-        <span class="date-meta ">05/11</span>
+        <span class="date-meta ">2019/05/11</span>
     </span>
     
     
@@ -193,12 +212,84 @@
     
 </div>
 
-      </li>
+            
+            
+        </div>
         
-    </ul>
-  </div>
-</div>
+        <div id="post-body">
+            <p>花了一晚上时间才给博客折腾好，遇到不少坑，等明天再写点东西总结下，太晚了。</p>
+<h2 id="我是怎么做的"><a href="#我是怎么做的" class="headerlink" title="我是怎么做的"></a>我是怎么做的</h2><p>先说说大致的框架，我使用的是 GitHub pages 服务，然后本地写作更新采用hexo ，这是一个非常强大的静态页面生成工具。基于 node.js ，安装过程遇到很多原因不明的报错，结果还是因为sudo。权限不足啊！看来距离我折腾zch又近了一步。自己选了一个笔记喜欢的主题 -（好看的太多了啊，选择强迫症） -，主题配置到完善还需要一阵忙活，真的发现自己输出知识太少了，希望这种输出强迫输入的方式很有用。</p>
+<h3 id="纪念一下第一篇文章的代码吧"><a href="#纪念一下第一篇文章的代码吧" class="headerlink" title="纪念一下第一篇文章的代码吧"></a>纪念一下第一篇文章的代码吧</h3><p><code>jiangfengdeMBP:myblog windgiang$ hexo new 我的第一篇文章</code><br><code>INFO  Created: ~/myblog/source/_posts/我的第一篇文章.md</code><br><code>jiangfengdeMBP:myblog windgiang$ hexo g</code><br>goodnight～🌝</p>
 
+        </div>
+        <div id="post-footer">
+            <div class="avatar">
+                <img src="/images/head.JPG" alt="avatar">
+                
+                <a href="javascript:void(0)" class="high-song">high起来 &#128541;</a>
+                
+                
+                <a href="javascript:void(0)" class="donate fa">赠我一杯 &#128536;</a>
+                
+            </div>
+            <ul class="author-profile-section">
+                <li>
+                  
+                  Author:
+                  
+                    
+                    <a href="/about.html">WindGiang</a>
+                </li>
+                
+                <li>Published Date: <span>2019-05-11  02:37:41</span></li>
+                
+                <li>Updated Date: <span>2019-05-11  02:39:56</span></li>
+                
+                <li class="post-category">
+                    Categories:
+                    
+                </li>
+                <li class="post-tags">
+                    Tags:
+                    
+                    <a href="/tags/叨叨/">叨叨</a>
+                    
+                </li>
+                
+                <li> License: <a href="https://creativecommons.org/licenses/by-nc-nd/3.0/" target="_blank">
+知识共享署名-非商业性使用-禁止演绎 3.0 未本地化版本许可协议（CC BY-NC-ND 3.0）
+</a></li>
+                
+            </ul>
+            <div id="donate-wrap">
+                
+                
+                
+                <img src="/images/alipay.JPG" alt="支付宝付款" class="donate-img">
+                
+                <img src="/images/wechat.JPG" alt="微信付款" class="donate-img">
+                
+                
+            </div>
+        </div>
+    </article>
+    <div class="article-nav">
+        
+        
+    </div>
+    
+    <div id="comments">
+        
+
+<script>
+  gitment.render(document.getElementById("comments"));
+</script>
+
+
+
+    </div>
+    
+</div>
 
 
     </div>
@@ -234,8 +325,14 @@
     <li class="totop-btn fa fa-angle-up"></li>
     <li class="exchange-btn fa fa-exchange"></li>
   
+    <li class="toc-btn fa fa-list-ul"></li>
+    
     
 
+    
+    <li class="comment-btn fa fa-comments-o">
+        <a href="#comments" title="comments"></a>
+    </li>
     
 </ul>
 <p id="process"></p>
@@ -252,6 +349,8 @@
         </div>
     </div>
 </div>
+
+    <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#我是怎么做的"><span class="toc-number">1.</span> <span class="toc-text">我是怎么做的</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#纪念一下第一篇文章的代码吧"><span class="toc-number">1.1.</span> <span class="toc-text">纪念一下第一篇文章的代码吧</span></a></li></ol></li></ol>
 
 
     <script src="/js/highsong.js"></script>
