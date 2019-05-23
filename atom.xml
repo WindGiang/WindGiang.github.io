@@ -2,11 +2,11 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <title>hi!jf&#39;s blog!</title>
   
-  <subtitle>丰的个人博客！</subtitle>
+  <subtitle>丰写字的地方</subtitle>
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://windgiang.github.io/"/>
-  <updated>2019-05-15T03:05:41.011Z</updated>
+  <updated>2019-05-23T15:56:09.209Z</updated>
   <id>https://windgiang.github.io/</id>
   
   <author>
@@ -17,37 +17,44 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>oracle_log</title>
+    <title>如何在Mac上学习oracle数据库</title>
     <link href="https://windgiang.github.io/2019/05/15/oracle-log/"/>
     <id>https://windgiang.github.io/2019/05/15/oracle-log/</id>
     <published>2019-05-15T03:05:40.000Z</published>
-    <updated>2019-05-15T03:05:41.011Z</updated>
+    <updated>2019-05-23T15:56:09.209Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="虚拟机"><a href="#虚拟机" class="headerlink" title="虚拟机"></a>虚拟机</h1><p>众所周知，Mac上是不能安装大部分数据库软件的，因为很少人会用macOS做服务器，由于课业需要oracle数据库，所以我在起初我纠结很久，要不要在Mac上安装个Windows，无意中看到一篇文章，讲了一种方法，端口转发，瞬间来了灵感。我的电脑上安装了parallel desktop，这是一个Mac平台下优秀的虚拟机，这里就不赘述其安装方法，其他博主介绍很多了。我们可以讲本地数据库安装在虚拟机中，在Mac中通过虚拟机的端口转发实现访问。</p><a id="more"></a><h2 id="如何设置虚拟机"><a href="#如何设置虚拟机" class="headerlink" title="如何设置虚拟机"></a>如何设置虚拟机</h2><p><img src="/images/image-20190523225522138.png" alt="image-20190523225522138"></p><p>在状态栏中打开parallel的配置选项，我们使用共享网络，添加一条转发规则，使用你在安装数据库时设置的端口，oracle数据库默认的是1521，所以我们设置Mac下1521的请求转发到Windows下的1521端口，这样就可以在Mac下连接Windows虚拟机中的数据库了。你问我为啥不直接在Windows中使用数据库管理软件？个人喜好而已。毕竟Mac下有好用的navicat，当然我还是喜欢官方的sql developer。</p><h1 id="数据库"><a href="#数据库" class="headerlink" title="数据库"></a>数据库</h1><p>这里说一下oracle数据库连接上的一些坑，比如新建用户需要使用C##开头，原来看到是因为要区分大小写<del>记不清了</del>我建议数据库去oracle下载最新版的，因为操作系统也在更新，老版本或多或少都会与新系统存在兼容性问题。</p><p><img src="/images/image-20190523230528988.png" alt="image-20190523230528988"></p><p>连接名设置自己喜欢的。用户名也要加上双引号！还是因为大小写问题。</p>]]></content>
     
     <summary type="html">
     
+      &lt;h1 id=&quot;虚拟机&quot;&gt;&lt;a href=&quot;#虚拟机&quot; class=&quot;headerlink&quot; title=&quot;虚拟机&quot;&gt;&lt;/a&gt;虚拟机&lt;/h1&gt;&lt;p&gt;众所周知，Mac上是不能安装大部分数据库软件的，因为很少人会用macOS做服务器，由于课业需要oracle数据库，所以我在起初我纠结很久，要不要在Mac上安装个Windows，无意中看到一篇文章，讲了一种方法，端口转发，瞬间来了灵感。我的电脑上安装了parallel desktop，这是一个Mac平台下优秀的虚拟机，这里就不赘述其安装方法，其他博主介绍很多了。我们可以讲本地数据库安装在虚拟机中，在Mac中通过虚拟机的端口转发实现访问。&lt;/p&gt;
+    
     </summary>
     
+      <category term="datebase" scheme="https://windgiang.github.io/categories/datebase/"/>
+    
+    
+      <category term="数据库" scheme="https://windgiang.github.io/tags/%E6%95%B0%E6%8D%AE%E5%BA%93/"/>
     
   </entry>
   
   <entry>
-    <title>first blog!</title>
+    <title>First pages</title>
     <link href="https://windgiang.github.io/2019/05/11/blog/"/>
     <id>https://windgiang.github.io/2019/05/11/blog/</id>
     <published>2019-05-10T18:37:41.000Z</published>
-    <updated>2019-05-10T18:39:56.008Z</updated>
+    <updated>2019-05-23T15:58:10.656Z</updated>
     
-    <content type="html"><![CDATA[<p>花了一晚上时间才给博客折腾好，遇到不少坑，等明天再写点东西总结下，太晚了。</p><h2 id="我是怎么做的"><a href="#我是怎么做的" class="headerlink" title="我是怎么做的"></a>我是怎么做的</h2><p>先说说大致的框架，我使用的是 GitHub pages 服务，然后本地写作更新采用hexo ，这是一个非常强大的静态页面生成工具。基于 node.js ，安装过程遇到很多原因不明的报错，结果还是因为sudo。权限不足啊！看来距离我折腾zch又近了一步。自己选了一个笔记喜欢的主题 -（好看的太多了啊，选择强迫症） -，主题配置到完善还需要一阵忙活，真的发现自己输出知识太少了，希望这种输出强迫输入的方式很有用。</p><h3 id="纪念一下第一篇文章的代码吧"><a href="#纪念一下第一篇文章的代码吧" class="headerlink" title="纪念一下第一篇文章的代码吧"></a>纪念一下第一篇文章的代码吧</h3><p><code>jiangfengdeMBP:myblog windgiang$ hexo new 我的第一篇文章</code><br><code>INFO  Created: ~/myblog/source/_posts/我的第一篇文章.md</code><br><code>jiangfengdeMBP:myblog windgiang$ hexo g</code><br>goodnight～🌝</p>]]></content>
+    <content type="html"><![CDATA[<p>花了<del>一晚上时间</del><strong>很长时间</strong>才给博客折腾好，遇到不少坑，等明天再写点东西总结下，太晚了。</p><h2 id="我是怎么做的"><a href="#我是怎么做的" class="headerlink" title="我是怎么做的"></a>我是怎么做的</h2><p>先说说大致的框架，我使用的是 GitHub pages 服务，然后本地写作更新采用hexo ，这是一个非常强大的静态页面生成工具。基于 node.js ，安装过程遇到很多原因不明的报错，结果还是因为sudo。权限不足啊！看来距离我折腾zch又近了一步。自己选了一个笔记喜欢的主题 <del>好看的太多了啊，选择强迫症</del>，主题配置到完善还需要一阵忙活，真的发现自己输出知识太少了，希望这种输出强迫输入的方式很有用。<br><a id="more"></a></p><h3 id="生成文章就几步"><a href="#生成文章就几步" class="headerlink" title="生成文章就几步"></a>生成文章就几步</h3><p><code>jiangfengdeMBP:myblog windgiang$ hexo new 我的第一篇文章</code><br><code>INFO  Created: ~/myblog/source/_posts/我的第一篇文章.md</code><br><code>jiangfengdeMBP:myblog windgiang$ hexo g</code><br>goodnight～🌝</p>]]></content>
     
     <summary type="html">
     
-      
-      
-        &lt;p&gt;花了一晚上时间才给博客折腾好，遇到不少坑，等明天再写点东西总结下，太晚了。&lt;/p&gt;
-&lt;h2 id=&quot;我是怎么做的&quot;&gt;&lt;a href=&quot;#我是怎么做的&quot; class=&quot;headerlink&quot; title=&quot;我是怎么做的&quot;&gt;&lt;/a&gt;我是怎么做的&lt;/h2&gt;&lt;p&gt;先说说大致的框架，
-      
+      &lt;p&gt;花了&lt;del&gt;一晚上时间&lt;/del&gt;&lt;strong&gt;很长时间&lt;/strong&gt;才给博客折腾好，遇到不少坑，等明天再写点东西总结下，太晚了。&lt;/p&gt;
+&lt;h2 id=&quot;我是怎么做的&quot;&gt;&lt;a href=&quot;#我是怎么做的&quot; class=&quot;headerlink&quot; title=&quot;我是怎么做的&quot;&gt;&lt;/a&gt;我是怎么做的&lt;/h2&gt;&lt;p&gt;先说说大致的框架，我使用的是 GitHub pages 服务，然后本地写作更新采用hexo ，这是一个非常强大的静态页面生成工具。基于 node.js ，安装过程遇到很多原因不明的报错，结果还是因为sudo。权限不足啊！看来距离我折腾zch又近了一步。自己选了一个笔记喜欢的主题 &lt;del&gt;好看的太多了啊，选择强迫症&lt;/del&gt;，主题配置到完善还需要一阵忙活，真的发现自己输出知识太少了，希望这种输出强迫输入的方式很有用。&lt;br&gt;
     
     </summary>
+    
+      <category term="闲谈" scheme="https://windgiang.github.io/categories/%E9%97%B2%E8%B0%88/"/>
     
     
       <category term="叨叨" scheme="https://windgiang.github.io/tags/%E5%8F%A8%E5%8F%A8/"/>

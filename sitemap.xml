@@ -2,16 +2,30 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>https://windgiang.github.io/2019/05/15/oracle-log/</loc>
+    <loc>https://windgiang.github.io/2019/05/11/blog/</loc>
     
-    <lastmod>2019-05-15T03:05:41.011Z</lastmod>
+    <lastmod>2019-05-23T15:58:10.656Z</lastmod>
     
   </url>
   
   <url>
-    <loc>https://windgiang.github.io/2019/05/11/blog/</loc>
+    <loc>https://windgiang.github.io/2019/05/15/oracle-log/</loc>
     
-    <lastmod>2019-05-10T18:39:56.008Z</lastmod>
+    <lastmod>2019-05-23T15:56:09.209Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://windgiang.github.io/tags/index.html</loc>
+    
+    <lastmod>2019-05-23T15:44:02.587Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://windgiang.github.io/categories/index.html</loc>
+    
+    <lastmod>2019-05-23T15:43:33.846Z</lastmod>
     
   </url>
   
